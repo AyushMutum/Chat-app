@@ -12,12 +12,14 @@
   
   .ce-chats-container {
     background-color: rgb(240, 240, 240) !important;
+    /* border: 1px solid red; */
   }
   
   .ce-active-chat-card {
     background-color: #cabcdc !important;
     border: 4px solid #cabcdc !important;
     border-radius: 0px !important;
+    
   }
   
   .ce-chat-subtitle-text {
@@ -87,6 +89,7 @@
     color: #7554a0;
     font-weight: 800;
     font-size: 24px;
+    /* border: 1px solid red; */
   }
   
   .chat-subtitle {
@@ -156,7 +159,7 @@
   .message-form-container {
     position: absolute;
     bottom: 0px;
-    width: calc(100% - 36px);
+    width: calc(100% - 5px);
     padding: 18px;
     background-color: rgb(240, 240, 240);
   }
@@ -182,6 +185,7 @@
     cursor: pointer;
     padding: 0px 12px;
     height: 100%;
+    /* border: 1px solid red; */
   }
   
   .send-button {
@@ -196,12 +200,13 @@
     top: 1px;
     position: relative;
     transform: rotate(-90deg);
+    font-size: 20px;
   }
   
   .picture-icon {
     top: 1px;
     position: relative;
-    font-size: 14px;
+    font-size: 20px;
   }
   
   /* FORM STYLES */
@@ -222,6 +227,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border: 1px solid red; */
   }
   
   .input {
@@ -288,3 +294,84 @@
     opacity: 1;
     right: 0;
   }
+
+
+  /* @media(max-width:586px){
+
+
+    }
+     */
+
+
+     .chat-card-wrap{
+      background-color: rgb(240, 240, 240) !important;
+     }
+
+     .logout-button{
+      background-color: #7554a0;
+      padding: 10px 10px;
+      border: none;
+      margin-top: 2px;
+      margin-left: 2px;
+   
+     }
+
+     .image-modal {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      max-width: 800px;
+      background-color: white;
+      border-radius: 5px;
+      padding: 20px;
+    }
+    
+    .image-modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.75);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .enlarged-message-image {
+      width: 100%;
+      height: auto;
+      max-height: 600px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .image-modal {
+        width: 90%;
+        max-width: 500px;
+        padding: 10px;
+      }
+    
+      .enlarged-message-image {
+        max-height: 300px;
+      }
+    }
+
+    .download-button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    .download-button {
+      padding: 8px 16px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .download-button:hover {
+      background-color: #0056b3;
+    }
